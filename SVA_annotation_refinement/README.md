@@ -2,6 +2,23 @@
 
 The whole refinement module has been integrated into the the xTea long reads module (https://github.com/parklab/xTea/tree/xTea_long_release_v0.1.0).
 
+
+## Functionality
+
+This module refine the raw RepeatMasker annotation, as well as define new subfamilies: SVA_F1 and CH10_SVA_F. Initernally, it uses the following cutoff to define the different fields:
+
+```
+Type: (hexamer-length, VNTR-start, VNTR-end, polyA-length, total-length)
+SVA_A: (65, 420, 800, 20, 1387)
+SVA_B: (70, 360, 800, 20, 1383)
+SVA_C: (70, 420, 800, 20, 1384)
+SVA_D: (70, 420, 800, 20, 1386)
+SVA_E: (70, 420, 800, 20, 1382)
+SVA_F: (70, 410, 790, 20, 1375)
+
+```
+
+
 ## Download
 
 1. download from the xTea long reads repo
