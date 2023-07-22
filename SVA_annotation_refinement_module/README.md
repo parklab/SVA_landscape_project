@@ -122,3 +122,21 @@ SVA_F: (70, 410, 790, 20, 1375)
 
 	The refined annotation will be saved in the file annotated in `-o` option.
 
+	For the columns of the refined annotation:
+	```
+	Id: In format SampleId_Chrm_Position
+	Type: Annotated subfamily of the SVA copy;
+	Full_copy: Indicates whether this is a full or truncated copy;
+	TD5: 5' transduction ("NULL" if not);
+	Pre_Alu: This is for CH10_SVA_F, whose full-structure contains the two-sides Alus. Shown in format "subfamily_start_end" (e.g. "AluSc_182_309");
+	MAST2: This is for CH10_SVA_F and SVA_F1, which have fusion region with MAST2 gene. Shown in format "start_end" (coordinate of the gene);
+	Hex: Length of the (CCCTCT)n hexamer region;
+	Alu_like: Length of the Alu-like region;
+	VNTR: Length of the VNTR region;
+	SINE_R: Length of the SINE-R region;
+	Suf_Alu: This is for CH10_SVA_F, whose full-structure contains the two-sides Alus. Shown in format "subfamily_start_end" (e.g. "AluSp_1_301");
+	TD3: 3' transduction ("NULL" if not);
+	Orientation: Insertion orientation;
+	Total_len: Total length of the SVA copy.
+	```
+
